@@ -1,0 +1,3 @@
+Create a folder file_organizer_app
+    inside - create a file called file_organizer.py
+    this will be the starting point
