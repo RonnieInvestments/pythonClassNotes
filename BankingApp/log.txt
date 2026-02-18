@@ -1,0 +1,17 @@
+
+        **************LOG****************
+            Timestamp: 2026-02-18 11:08:50
+            Function: get_account_by_id_no
+            Time Taken: 3.3855438232421875e-05 seconds
+            Inputs: args = ('27163117',), kwargs = {}
+            Result: None
+         *********************************
+        
+        **************LOG****************
+            Timestamp: 2026-02-18 11:08:50
+            Function: create_account
+            Time Taken: 0.0004284381866455078 seconds
+            Inputs: args = (), kwargs = {'id_no': '27163117', 'name': 'Kwamboka'}
+            Result: None
+         *********************************
+        

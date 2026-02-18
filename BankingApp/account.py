@@ -1,12 +1,30 @@
 # Handle account logic
 import json
-import os
-import sys
+import os, sys
+from decorators import log
 
+# check if account exists
+@log
+def get_account_by_id_no(id_no):
+    file_name = f"accounts/{id_no}.json"
+
+    if not os.path.exists(file_name):
+        return None
+    
+    with open(file_name, "r") as file:
+        account = json.load(file)
+        print(account)
+    return account
+
+@log
 def create_account(id_no, name):
     # account_no = "11111"
     # validation
     # id_no, name
+    if get_account_by_id_no(id_no):
+        print(f"Account with id no {id_no} already exists.")
+        return None
+
     account = {
         "account_no": id_no,
         "id_no": id_no,
@@ -24,17 +42,6 @@ def create_account(id_no, name):
 
 # create_account(id_no = "223344", name = "Ronnie")
 # create_account(id_no = "235355", name = "Nyakwama")
+# get_account_by_id_no(id_no = "223344")
 
-# check if account exists
-def get_account_by_id_no(id_no):
-    file_name = f"accounts/{id_no}.json"
-
-    if not os.path.exists(file_name):
-        return None
-    
-    with open(file_name, "r") as file:
-        account = json.load(file)
-        print(account)
-    return account
-
-get_account_by_id_no(id_no = "223344")
+create_account(id_no = "27163117", name = "Kwamboka")
