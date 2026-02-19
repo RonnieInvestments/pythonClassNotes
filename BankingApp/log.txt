@@ -15,3 +15,67 @@
             Result: None
          *********************************
         
+        **************LOG****************
+            Timestamp: 2026-02-19 09:57:37
+            Function: get_account_by_id_no
+            Time Taken: 0.0003573894500732422 seconds
+            Inputs: args = ('27163117',), kwargs = {}
+            Result: {'account_no': '27163117', 'id_no': '27163117', 'name': 'Kwamboka', 'transaction_history': [], 'balance': 0, 'password': '123456'}
+        *********************************
+        
+        **************LOG****************
+            Timestamp: 2026-02-19 09:57:37
+            Function: create_account
+            Time Taken: 0.0006840229034423828 seconds
+            Inputs: args = (), kwargs = {'id_no': '27163117', 'name': 'Kwamboka'}
+            Result: None
+        *********************************
+        
+        **************LOG****************
+            Timestamp: 2026-02-19 09:58:10
+            Function: get_account_by_id_no
+            Time Taken: 0.00010180473327636719 seconds
+            Inputs: args = ('345678',), kwargs = {}
+            Result: None
+        *********************************
+        
+        **************LOG****************
+            Timestamp: 2026-02-19 09:59:00
+            Function: get_account_by_id_no
+            Time Taken: 0.00010633468627929688 seconds
+            Inputs: args = ('367378',), kwargs = {}
+            Result: None
+        *********************************
+        
+        **************LOG****************
+            Timestamp: 2026-02-19 10:11:12
+            Function: get_account_by_id_no
+            Time Taken: 0.00010061264038085938 seconds
+            Inputs: args = ('234567',), kwargs = {}
+            Result: None
+        *********************************
+        
+        **************LOG****************
+            Timestamp: 2026-02-19 10:11:18
+            Function: get_account_by_id_no
+            Time Taken: 2.9802322387695312e-05 seconds
+            Inputs: args = ('234567',), kwargs = {}
+            Result: None
+        *********************************
+        
+        **************LOG****************
+            Timestamp: 2026-02-19 10:11:18
+            Function: create_account
+            Time Taken: 0.0003178119659423828 seconds
+            Inputs: args = (), kwargs = {'name': 'Ronaldo', 'password': '234590', 'id_no': '234567'}
+            Result: None
+        *********************************
+        
+        **************LOG****************
+            Timestamp: 2026-02-19 10:11:08
+            Function: new_account
+            Time Taken: 10.06520414352417 seconds
+            Inputs: args = (), kwargs = {}
+            Result: None
+        *********************************
+        
