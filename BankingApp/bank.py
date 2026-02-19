@@ -61,5 +61,40 @@ def deposit(account):
     account_update = update_account(account = account)
     return account_update
 
-account = get_account_by_id_no("234567")
-deposit(account)
+#account = get_account_by_id_no("234567")
+#deposit(account)
+
+# Withdrawal function
+@log
+def withdraw(account):
+    transaction_history = account["transaction_history"]
+    balance = account["balance"]
+    print(f"Account balance is {balance}.")
+    amount = int(input("Amount to Withdraw"))
+
+    # try-except -> for string inputs
+    # Additional check if amount > 0
+    if amount < 0:
+        print("To withdraw, please enter amount greater than 0.")
+        return None
+    
+    if amount > balance:
+        print(f"Can't withdraw more than {balance}")
+    
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    new_balance = balance - amount
+    transaction_history.append({
+            "transaction_type":"Withdraw",
+            "timestamp": timestamp,
+            "amount": amount,
+            "balance": balance,
+            "new_balance": new_balance
+        })
+    account["balance"] = new_balance
+    account["transaction_history"] = transaction_history
+
+    account_update = update_account(account = account)
+    return account_update
+
+account = get_account_by_id_no("")
+withdraw(account)
