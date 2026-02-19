@@ -24,3 +24,18 @@ sheeran_songs = artist_songs["Ed Sheeran"]
 print(sheeran_songs)
 
 # check on recommendation logic
+# Get user input
+favorite_artist = input("Please enter your favorite artist:\n")
+
+# Check for favorite artist
+if favorite_artist in artist_songs:
+    recommended_songs = artist_songs[favorite_artist]
+    print(f"Here are some recommendations from your {favorite_artist}")
+    for song in recommended_songs:
+        print(f"- {song}")
+
+else:
+    print(f"Sorry we do not have songs from {favorite_artist} yet. Here are some recommendations from similar artists.")
+    # Add logic to recommend songs from similar artists - for now lets have a placeholder
+    print("- Similar artist song 1")
+    print("- Similar artist song 2")
