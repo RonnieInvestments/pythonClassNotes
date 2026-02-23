@@ -43,4 +43,26 @@ numbers = list(range(1,6))
 reversed_numbers = list(reversed(numbers))
 print(reversed_numbers)
 '''
+'''
+my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}
+print(my_dict['age'])
 
+person = {'name': 'Emma', 'age': 28}
+person.update({'country': 'USA'})
+print(person)
+
+
+person = {'name': 'Alice', 'age': 25, 'city': 'London'}
+person.pop('age')
+print(person)
+'''
+# Creating the dictionary
+my_dict = {
+    'a': 1, 
+    'b': 2, 
+    'c': 3
+}
+
+# Looping through
+for key, value in my_dict.items():
+    print(f"{key}: {value}")
