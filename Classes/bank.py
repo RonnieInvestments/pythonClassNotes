@@ -14,8 +14,8 @@ class Bank_Account:
         return self.get_balance
     
     def set_balance(self, amount):
-        if amount <= 0:
-            print("Balance cannot be negative or zero.")
+        if amount < 0:
+            print("Balance cannot be negative.")
         else:
             self._balance = amount
 
@@ -25,7 +25,7 @@ class Bank_Account:
     # Deposit function -> Adds amount to account
     def deposit(self, amount_to_deposit):
         # Check if amount is negative
-        if amount_to_deposit < 0:
+        if amount_to_deposit <= 0:
             print("Enter amount greater than zero.")
         # If amount is more than zero proceed
         else:
@@ -35,7 +35,7 @@ class Bank_Account:
     # Withdrawal function -> Substracts amount from account
     def withdraw(self, amount_to_withdraw):
         # Check if amount is negative
-        if amount_to_withdraw < 0:
+        if amount_to_withdraw <= 0:
             print("Enter amount greater than zero.")
         # Check if amount is equal to or more than balance
         elif amount_to_withdraw > self.balance:
