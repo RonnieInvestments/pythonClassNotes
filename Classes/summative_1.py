@@ -110,33 +110,33 @@ result1_1 = count_specific_word("This is a test.","test")
 result1_2 = count_specific_word("apple apple banana banana banana","banana")
 result1_3 = count_specific_word("","test")
 
+print(result1_1)
+print(result1_2)
+print(result1_3)
+
 result2 = identify_most_common_word("apple apple banana banana banana")
+
+print(result2)
 
 result3_1 = calculate_average_word_length("This is a test.")
 result3_2 = calculate_average_word_length("apple apple banana banana banana")
 result3_3 = calculate_average_word_length("")
 
-result4_1 = count_paragraphs("This is a test.")
-result4_2 = count_paragraphs("apple apple banana banana banana")
-result4_3 = count_paragraphs("")
-
-result5_1 = count_sentences("This is a test.")
-result5_2 = count_sentences("apple apple banana banana banana")
-result5_3 = count_sentences("")
-
-print(result1_1)
-print(result1_2)
-print(result1_3)
-
-print(result2)
-
 print(result3_1)
 print(result3_2)
 print(result3_3)
 
+result4_1 = count_paragraphs("This is a test.")
+result4_2 = count_paragraphs("apple apple banana banana banana")
+result4_3 = count_paragraphs("")
+
 print(result4_1)
 print(result4_2)
 print(result4_3)
+
+result5_1 = count_sentences("This is a test.")
+result5_2 = count_sentences("apple apple banana banana banana")
+result5_3 = count_sentences("")
 
 print(result5_1)
 print(result5_2)
